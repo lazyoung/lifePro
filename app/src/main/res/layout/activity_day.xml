@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="left"
+	android:id="@+id/DayLinearLayoutBackground"
+	android:background="#548477">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:id="@+id/DayLinearLayoutLeft"
+		android:layout_width="90dp">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="option"
+			android:id="@+id/DayButtonOption"
+			android:textSize="15sp"
+			android:onClick="onOptionClick"
+			android:layout_marginBottom="40dp"
+			android:background="#C4D2C6"
+			android:layout_marginTop="10dp"
+			android:textStyle="italic"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="dinner"
+			android:id="@+id/DayButtonDinner"
+			android:onClick="onDinnerClick"
+			android:textSize="15sp"
+			android:textStyle="italic"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="Class D"
+			android:id="@+id/DayButtonClassD"
+			android:textSize="15sp"
+			android:onClick="onClassDClick"
+			android:textStyle="italic"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="Sleep"
+			android:id="@+id/DayButtonSleep"
+			android:textSize="15sp"
+			android:onClick="onSleepClick"
+			android:textStyle="italic"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="Class A"
+			android:id="@+id/DayButtonClassA"
+			android:textSize="15sp"
+			android:onClick="onClassAClick"
+			android:textStyle="italic"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="Breakfast"
+			android:id="@+id/DayButtonBreakfast"
+			android:textSize="14sp"
+			android:onClick="onBreakfastClick"
+			android:textStyle="italic"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="Class B"
+			android:id="@+id/DayButtonClassB"
+			android:textSize="15sp"
+			android:onClick="onClassBClick"
+			android:textStyle="italic"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="Lunch"
+			android:id="@+id/DayButtonLunch"
+			android:textSize="15sp"
+			android:onClick="onLunchClick"
+			android:textStyle="italic"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="Class C"
+			android:id="@+id/DayButtonClassC"
+			android:textSize="15sp"
+			android:onClick="onClassCClick"
+			android:textStyle="italic"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="Work"
+			android:id="@+id/DayButtonWork"
+			android:textSize="15sp"
+			android:onClick="onWorkClick"
+			android:textStyle="italic"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:text="Happy"
+			android:id="@+id/DayButtonHappy"
+			android:textSize="15sp"
+			android:onClick="onHappyClick"
+			android:textStyle="italic"/>
+
+		<Button
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:text="Start"
+			android:id="@+id/DayButtonStart"
+			android:layout_marginTop="20dp"
+			android:onClick="onStartClick"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:layout_marginLeft="5dp"
+		android:id="@+id/DayLinearLayoutMain"
+		android:weightSum="1">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:id="@+id/DayLinearLayoutMenu"
+			android:weightSum="1">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="Reset"
+				android:id="@+id/DayButtonReset"
+				android:textColor="#FFFFFF"
+				android:textSize="20sp"
+				android:onClick="onResetClick"
+				android:typeface="serif"
+				android:textStyle="bold"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="more"
+				android:id="@+id/DayButtonMore"
+				android:textColor="#05FF00"
+				android:textSize="20sp"
+				android:onClick="onMoreClick"
+				android:typeface="serif"
+				android:textStyle="bold"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="less"
+				android:id="@+id/DayButtonLess"
+				android:textColor="#FF0F00"
+				android:textSize="20sp"
+				android:onClick="onLessClick"
+				android:typeface="serif"
+				android:textStyle="bold"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:text="save"
+				android:id="@+id/DayButtonSave"
+				android:textSize="20sp"
+				android:onClick="onSaveClick"
+				android:typeface="serif"
+				android:textStyle="bold"
+				android:layout_weight="1"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:id="@+id/DayLinearLayoutTask"
+			android:layout_marginTop="5dp">
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="68dp"
+				android:text="A"
+				android:id="@+id/DayButtonTaskA"
+				android:textColor="#FFFFFF"
+				android:onClick="onTaskAClick"
+				android:textSize="15sp"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="B"
+				android:id="@+id/DayButtonTaskB"
+				android:textColor="#FEF800"
+				android:textSize="15sp"
+				android:onClick="onTaskBClick"
+				android:layout_width="68dp"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:text="C"
+				android:id="@+id/DayButtonTaskC"
+				android:textColor="#859BDA"
+				android:textSize="15sp"
+				android:onClick="onTaskCClick"
+				android:layout_width="68dp"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="68dp"
+				android:text="D"
+				android:id="@+id/DayButtonTaskD"
+				android:textColor="#21D824"
+				android:textSize="15sp"
+				android:onClick="onTaskDClick"/>
+
+			<Button
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:text="E"
+				android:id="@+id/DayButtonTaskE"
+				android:textColor="#C12744"
+				android:textSize="15sp"
+				android:onClick="onTaskEClick"
+				android:minWidth="40dp"/>
+
+		</LinearLayout>
+
+		<EditText
+			android:layout_height="150dp"
+			android:inputType="textMultiLine"
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:textColor="#F8F8F8"
+			android:id="@+id/DayEditTextTask"
+			android:gravity="top|left"
+			android:layout_marginTop="20dp"
+			android:layout_marginBottom="10dp"
+			android:hint="To Do"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:id="@+id/DayLinearLayoutScore">
+
+			<RatingBar
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:numStars="5"
+				android:rating="0"
+				android:stepSize="0.05"
+				android:id="@+id/DayRatingBar"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:id="@+id/DayTextViewScore"
+				android:textSize="30sp"
+				android:gravity="center"
+				android:layout_gravity="top"/>
+
+		</LinearLayout>
+
+		<TimePicker
+			android:layout_height="match_parent"
+			android:layout_width="wrap_content"
+			android:id="@+id/DayTimePicker"
+			android:layout_marginTop="10dp"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
